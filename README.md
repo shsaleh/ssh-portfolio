@@ -1,6 +1,6 @@
 This is my portfolio website. fel free to use it for your personal portfolio .
 
-if you find any mistake in code or have any idea pleas contact me via email below or create fork .
+if you find any mistake in code or have any idea please contact me via email below or create fork .
 
 ssh.portfolio.project@gmail.com
 
