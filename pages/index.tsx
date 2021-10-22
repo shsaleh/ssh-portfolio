@@ -59,14 +59,12 @@ export default class Home extends React.Component {
                     </div>
                     <img
                       className="z-0 col-start-1 row-start-1"
-                      src={proj.img?proj.img:"/images/imagePlaceholder.png"}
+                      src={proj.img ? proj.img : "/images/imagePlaceholder.png"}
                       alt=""
                     />
                   </div>
                 );
               })}
-
-           
             </div>
           </section>
         </div>
