@@ -17,7 +17,14 @@ export default class Home extends React.Component {
       { title: "Mysql", percentage: 75 },
       { title: "MongoDB", percentage: 57 },
     ],
+    frameworks: [
+      { title: "React / Next", percentage: 90 },
+      { title: "Vue / Nuxt", percentage: 90 },
+      { title: "Laravel", percentage: 80 },
+      { title: "NestJs", percentage: 50 },
+    ],
   };
+
   render() {
     return (
       <>
@@ -87,6 +94,36 @@ export default class Home extends React.Component {
             <div>
               <ul className="">
                 {this.state.programmingLnags.map((item, index) => {
+                  return (
+                    <li
+                      key={index + "programmingLang"}
+                      className="grid grid-cols-3 items-center my-3 w-full text-3xl"
+                    >
+                      <span>{item.title}</span>
+                      <div className="col-start-2 overflow-hidden rounded-lg col-end-5 h-3 mt-2 border-2 border-gray-400">
+                        <div
+                          className={`bg-gradient-to-r from-blue-500 to-green-400 rounded-lg h-full`}
+                          style={{
+                            width: item.percentage + "%",
+                          }}
+                        ></div>
+                      </div>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          </section>
+          <section className="my-16">
+            <div className="flex items-center mb-5">
+              <h2 className="text-5xl mb-5 font-bold  flex-shrink-0 me-5 align-middle">
+                Frameworks
+              </h2>
+              <div className="border-t-2 border-gray-300 w-full"></div>
+            </div>
+            <div>
+              <ul className="">
+                {this.state.frameworks.map((item, index) => {
                   return (
                     <li
                       key={index + "programmingLang"}
