@@ -10,20 +10,34 @@ export default class Home extends React.Component {
       { title: "proj 3", desc: "proj 3 desc", img: "" },
       { title: "proj 3", desc: "proj 3 desc", img: "" },
     ],
+    programmingLnags: [
+      { title: "javascript", percentage: 90 },
+      { title: "PHP", percentage: 80 },
+      { title: "Nodejs", percentage: 55 },
+      { title: "Mysql", percentage: 75 },
+      { title: "MongoDB", percentage: 57 },
+    ],
+    frameworks: [
+      { title: "React / Next", percentage: 90 },
+      { title: "Vue / Nuxt", percentage: 90 },
+      { title: "Laravel", percentage: 80 },
+      { title: "NestJs", percentage: 50 },
+    ],
   };
+
   render() {
     return (
       <>
         <MainHeader />
-        <div className="md:mx-32 mx-16">
+        <div className="md:mx-32 mx-16 text-textColor">
           <section className="my-16 ">
             <div className="flex items-center">
-              <h2 className="text-5xl mb-5 font-bold text-textColor flex-shrink-0 me-5 align-middle">
+              <h2 className="text-5xl mb-5 font-bold  flex-shrink-0 me-5 align-middle">
                 My story
               </h2>
               <div className="border-t-2 border-gray-300 w-full"></div>
             </div>
-            <p className="text-2xl text-textColor">
+            <p className="text-2xl ">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
               maxime saepe adipisci perspiciatis, quia, mollitia tempore
               reprehenderit temporibus sunt aliquam suscipit sint esse quaerat
@@ -43,15 +57,18 @@ export default class Home extends React.Component {
           </section>
           <section className="my-16">
             <div className="flex items-center mb-5">
-              <h2 className="text-5xl mb-5 font-bold text-textColor flex-shrink-0 me-5 align-middle">
+              <h2 className="text-5xl mb-5 font-bold  flex-shrink-0 me-5 align-middle">
                 Projects
               </h2>
               <div className="border-t-2 border-gray-300 w-full "></div>
             </div>
             <div className="grid lg:grid-cols-3 sm:grid-cols-1 gap-3 w-full">
-              {this.state.projects.map((proj) => {
+              {this.state.projects.map((proj, item) => {
                 return (
-                  <div className="z-20 grid bg-local bg-contain w-full bg-no-repeat group  ">
+                  <div
+                    key={item + "proj"}
+                    className="z-20 grid bg-local bg-contain w-full bg-no-repeat group  "
+                  >
                     <div className="bg-gray-100 opacity-70 transition-all duration-500 ease-in-out col-start-1  row-start-1 z-10 place-self-end w-full overflow-hidden h-0 px-8 group-hover:py-8 group-hover:h-28">
                       <h1>{proj.title}</h1>
                       <p>{proj.desc}</p>
@@ -65,6 +82,66 @@ export default class Home extends React.Component {
                   </div>
                 );
               })}
+            </div>
+          </section>
+          <section>
+            <div className="flex items-center mb-5">
+              <h2 className="text-5xl mb-5 font-bold  flex-shrink-0 me-5 align-middle">
+                programming langs
+              </h2>
+              <div className="border-t-2 border-gray-300 w-full"></div>
+            </div>
+            <div>
+              <ul className="">
+                {this.state.programmingLnags.map((item, index) => {
+                  return (
+                    <li
+                      key={index + "programmingLang"}
+                      className="grid grid-cols-3 items-center my-3 w-full text-3xl"
+                    >
+                      <span>{item.title}</span>
+                      <div className="col-start-2 overflow-hidden rounded-lg col-end-5 h-3 mt-2 border-2 border-gray-400">
+                        <div
+                          className={`bg-gradient-to-r from-blue-500 to-green-400 rounded-lg h-full`}
+                          style={{
+                            width: item.percentage + "%",
+                          }}
+                        ></div>
+                      </div>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          </section>
+          <section className="my-16">
+            <div className="flex items-center mb-5">
+              <h2 className="text-5xl mb-5 font-bold  flex-shrink-0 me-5 align-middle">
+                Frameworks
+              </h2>
+              <div className="border-t-2 border-gray-300 w-full"></div>
+            </div>
+            <div>
+              <ul className="">
+                {this.state.frameworks.map((item, index) => {
+                  return (
+                    <li
+                      key={index + "programmingLang"}
+                      className="grid grid-cols-3 items-center my-3 w-full text-3xl"
+                    >
+                      <span>{item.title}</span>
+                      <div className="col-start-2 overflow-hidden rounded-lg col-end-5 h-3 mt-2 border-2 border-gray-400">
+                        <div
+                          className={`bg-gradient-to-r from-blue-500 to-green-400 rounded-lg h-full`}
+                          style={{
+                            width: item.percentage + "%",
+                          }}
+                        ></div>
+                      </div>
+                    </li>
+                  );
+                })}
+              </ul>
             </div>
           </section>
         </div>
