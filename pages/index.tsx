@@ -1,5 +1,6 @@
 import React from "react";
 import MainHeader from "components/main/mainHeader";
+import MainFooter from "components/main/mainFooter";
 export default class Home extends React.Component {
   state = {
     projects: [
@@ -143,6 +144,9 @@ export default class Home extends React.Component {
                 })}
               </ul>
             </div>
+          </section>
+          <section>
+              <MainFooter />
           </section>
         </div>
       </>
