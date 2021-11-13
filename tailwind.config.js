@@ -6,6 +6,7 @@ module.exports = {
     extend: {
       colors: {
         textColor: "#707070",
+        link:"#0AF2EC"
       },
       transitionProperty: {
         height: 'height',
