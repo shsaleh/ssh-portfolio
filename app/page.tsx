@@ -3,7 +3,17 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="">
-      <div className="h-[80vh] flex items-center justify-center">
+      <div className="h-[80vh] md:flex items-center justify-center md:flex-row-reverse">
+      <section className="w-1/3 md:flex justify-center items-center">
+          <div className="rounded-full overflow-hidden  border-sky-800 w-[300px] h-[300px]">
+            <Image
+              src="/assets/profile.jpg"
+              alt="Picture of the author"
+              width={300}
+              height={300}
+            />
+          </div>
+        </section>
         <section className="w-2/3 space-y-5">
           <h1 className="text-5xl">Hi, i'm Saleh Shokouhi</h1>
           <h2 className="text-3xl">Full Stack Web Developer</h2>
@@ -12,16 +22,6 @@ export default function Home() {
             <button className="bg-sky-800 text-white px-5 py-2 rounded-md hover:bg-sky-900">Contact Me</button>
             <div className="mx-2"></div>
             <button className="border border-sky-800 text-sky-800 px-5 py-2 rounded-md hover:border-sky-900 hover:text-sky-900">Download My Resume ( pdf )</button>
-          </div>
-        </section>
-        <section className="w-1/3 flex justify-center items-center">
-          <div className="rounded-full overflow-hidden  border-sky-800 w-[300px] h-[300px]">
-            <Image
-              src="/assets/profile.jpg"
-              alt="Picture of the author"
-              width={300}
-              height={300}
-            />
           </div>
         </section>
       </div>
