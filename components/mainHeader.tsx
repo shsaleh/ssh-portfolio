@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function MainHeader() {
 
     return (
-        <header className="flex justify-between px-[100px] pt-5  ">
+        <header className="flex justify-between pt-5 h-[10vh] ">
             <section>
                 <h1 className="">Saleh</h1>
             </section>
