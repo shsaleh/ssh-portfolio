@@ -1,3 +1,4 @@
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -13,8 +14,15 @@ export default function Home() {
             <button className="border border-sky-800 text-sky-800 px-5 py-2 rounded-md hover:border-sky-900 hover:text-sky-900">Download My Resume ( pdf )</button>
           </div>
         </section>
-        <section className="w-1/3">
-
+        <section className="w-1/3 flex justify-center items-center">
+          <div className="rounded-full overflow-hidden  border-sky-800 w-[300px] h-[300px]">
+            <Image
+              src="/assets/profile.jpg"
+              alt="Picture of the author"
+              width={300}
+              height={300}
+            />
+          </div>
         </section>
       </div>
       <div className="h-[10vh] flex gap-3">
