@@ -22,7 +22,7 @@ export default function MainHeader() {
                         <Link href="/">Projects</Link>
                     </li>
                     <li className="hover:text-sky-800 transition-all ease-out duration-150">
-                        <Link href="/">Contact</Link>
+                        <Link href="/contact">Contact</Link>
                     </li>
                 </ul>
             </nav>

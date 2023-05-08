@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -17,7 +18,7 @@ export default function Home() {
           <h2 className="md:text-xl text-sky-400">Full Stack Web Developer</h2>
           <p>With over four years of experience in web development, I am a self-taught professional skilled in crafting dynamic web applications using popular front-end technologies like Vue and React. My proven track record includes effectively leading small teams of mid-level and junior developers. My knowledge of Git, Git flow, and agile methodologies enables me to work efficiently and collaboratively within development teams. Furthermore, I have a proficient understanding of back-end technologies, including NestJS, MySQL, RabbitMQ, and more.</p>
           <div className="flex flex-col md:flex-row gap-5">
-            <button className="bg-sky-800 text-white px-5 py-2 rounded-md hover:bg-sky-900">Contact Me</button>
+            <Link href="/contact"><button className="bg-sky-800 text-white px-5 py-2 rounded-md hover:bg-sky-900">Contact Me</button></Link>
             <button className="border border-sky-800 text-sky-800 px-5 py-2 rounded-md hover:border-sky-900 hover:text-sky-900">Download My Resume ( pdf )</button>
           </div>
         </section>
