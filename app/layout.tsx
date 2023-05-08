@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className + ' bg-cyan-950 md:h-screen  '}>
+      <body className={inter.className + ' bg-cyan-950 md:h-screen  text-white'}>
         <div className='bg-black opacity-80 md:h-screen '>
           <section className='mx-[5%]'>
             <MainHeader />
