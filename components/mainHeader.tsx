@@ -3,8 +3,8 @@ import Link from "next/link";
 export default function MainHeader() {
 
     return (
-        <header className="flex justify-between pt-5 h-[10vh] ">
-            <section>
+        <header className="flex md:justify-between pt-5 h-[10vh] justify-center ">
+            <section className="hidden md:block">
                 <h1 className="">Saleh</h1>
             </section>
             <nav>

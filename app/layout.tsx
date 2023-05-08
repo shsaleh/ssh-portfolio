@@ -16,12 +16,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className + ' bg-cyan-950 h-screen '}>
-        <div className='bg-black opacity-80 h-screen '>
-          <section className='mx-[100px]'>
+      <body className={inter.className + ' bg-cyan-950 md:h-screen  '}>
+        <div className='bg-black opacity-80 md:h-screen '>
+          <section className='mx-[5%]'>
             <MainHeader />
           </section>
-          <section className='mx-[100px]'>
+          <section className='mx-[5%]'>
             {children}
           </section>
         </div>
