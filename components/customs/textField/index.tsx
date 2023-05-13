@@ -1,3 +1,4 @@
+'use client';
 import React, { InputHTMLAttributes } from "react";
 
 type TextFieldPropsType = InputHTMLAttributes<{}>

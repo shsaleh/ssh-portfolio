@@ -1,3 +1,4 @@
+'use client';
 import { TextareaHTMLAttributes } from "react";
 
 type TextFieldPropsType = TextareaHTMLAttributes<{}>
