@@ -3,9 +3,10 @@ import TextField from "@/components/customs/textField";
 
 export default function ContactPage() {
   return (
-    <div className=" h-screen md:h-auto">
-      <h1>Contact</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus mollitia labore, at molestiae placeat ullam maiores consectetur omnis cumque ipsum fuga laborum cum ex magnam, porro animi quod facilis repellendus?</p>
+    <div className=" h-screen md:h-[80vh]  flex flex-col  md:justify-center">
+      <div className="mx-auto w-max">
+      <h1 className="text-3xl">Contact Me</h1>
+      </div>
       <div className="flex flex-col gap-5  items-center md:w-1/2 mx-auto mt-10">
         <div className="flex w-full gap-2">
           <TextField placeholder="Name" className="" />
