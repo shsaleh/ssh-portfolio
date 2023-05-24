@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import profileImage from "../public/assets/profile.jpg";
-import Btn from "@/components/customs/btn/Btn";
+import Btn from "@/components/customs/btn";
 export const metadata = {
   title: "home",
 }

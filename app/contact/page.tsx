@@ -1,7 +1,6 @@
 import TextArea from "@/components/customs/TextArea";
-import Btn from "@/components/customs/btn/Btn";
+import Btn from "@/components/customs/btn";
 import TextField from "@/components/customs/textField";
-import Head from "next/head";
 export const metadata = {
   title: "contact",
 }
