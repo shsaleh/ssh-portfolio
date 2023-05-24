@@ -2,7 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import profileImage from "../public/assets/profile.jpg";
 import Btn from "@/components/customs/btn/Btn";
-
+export const metadata = {
+  title: "home",
+}
 export default function Home() {
   return (
     <div className=" flex flex-col gap-5 md:gap-0 pb-5 md:pb-0">
