@@ -1,10 +1,13 @@
 'use client';
 import TextArea from "@/components/customs/TextArea";
-import Btn from "@/components/customs/btn/Btn";
+import Btn from "@/components/customs/btn";
 import TextField from "@/components/customs/textField";
 import axios from "axios";
 import { FormEvent } from "react";
 
+export const metadata = {
+  title: "contact",
+}
 export default function ContactPage() {
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
