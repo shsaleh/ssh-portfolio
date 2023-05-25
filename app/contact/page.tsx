@@ -3,19 +3,24 @@ import TextArea from "@/components/customs/TextArea";
 import Btn from "@/components/customs/btn";
 import TextField from "@/components/customs/textField";
 import axios from "axios";
-import { FormEvent } from "react";
+import { Metadata } from "next";
+import { FormEvent, useState } from "react";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "contact",
 }
-export default function ContactPage() {
+function ContactPage() {
+  const [submitloading, setSubmitLoading] = useState(false)
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
+    setSubmitLoading(true)
     let data = new FormData(e.currentTarget);
     var object: any = {};
     data.forEach((value, key) => object[key] = value);
     axios.post('/api/sendEmail', object).then(res => {
 
+    }).finally(() => {
+      setSubmitLoading(false)
     })
   }
   return (
@@ -33,8 +38,10 @@ export default function ContactPage() {
           <TextField placeholder="Mobile Number" name="mobile" />
         </div>
         <TextArea placeholder="text" rows={5} name="text" />
-        <Btn className="w-full">Submit</Btn>
+        <Btn loading={submitloading} className="w-full">Submit</Btn>
       </form>
     </div>
   );
 }
+
+export default ContactPage
