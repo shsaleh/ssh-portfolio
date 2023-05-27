@@ -28,13 +28,13 @@ export default function Home() {
         </section>
       </div>
       <div className="md:h-[10vh] flex gap-3 justify-center md:justify-start items-center md:items-start ">
-        <a href="#" target="_blank" className="rounded-full border-2 border-sky-800 text-center px-3 h-10 flex items-center justify-center hover:bg-sky-800 transition-all duration-150" >
+        <a href="https://www.linkedin.com/in/saleh-shokouhi-b7870418b/" target="_blank" className="rounded-full border-2 border-sky-800 text-center px-3 h-10 flex items-center justify-center hover:bg-sky-800 transition-all duration-150" >
           <span >linkedin</span>
         </a>
-        <a href="#" target="_blank" className="rounded-full border-2 border-sky-800 text-center px-3 h-10 flex items-center justify-center hover:bg-sky-800 transition-all duration-150" >
+        <a href="https://github.com/shsaleh" target="_blank" className="rounded-full border-2 border-sky-800 text-center px-3 h-10 flex items-center justify-center hover:bg-sky-800 transition-all duration-150" >
           <span >github</span>
         </a>
-        <a href="#" target="_blank" className="rounded-full border-2 border-sky-800 text-center px-3 h-10 flex items-center justify-center hover:bg-sky-800 transition-all duration-150" >
+        <a href="https://stackoverflow.com/users/5728565/saleh-shokouhi" target="_blank" className="rounded-full border-2 border-sky-800 text-center px-3 h-10 flex items-center justify-center hover:bg-sky-800 transition-all duration-150" >
           <span >stackoverflow</span>
         </a>
       </div>
