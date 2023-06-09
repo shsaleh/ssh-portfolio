@@ -7,8 +7,8 @@ export const metadata = {
 }
 export default function Home() {
   return (
-    <div className=" flex flex-col gap-5 md:gap-0 pb-5 md:pb-0">
-      <div className="md:h-[80vh] md:flex items-center justify-center md:flex-row-reverse space-y-5 md:space-y-0">
+    <div className=" flex flex-col gap-5 md:gap-0 pb-5 md:pb-0 h-full">
+      <div className="md:h-full md:flex items-center justify-center md:flex-row-reverse space-y-5 md:space-y-0">
         <section className="md:w-1/3 md:flex-row flex-col flex justify-center items-center">
           <div className="block rounded-full overflow-hidden  border-sky-800 w-[80%] h-[80%] ">
             <Image

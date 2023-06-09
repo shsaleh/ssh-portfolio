@@ -2,7 +2,7 @@
 
 export default function MainFooter() {
     return (
-        <div className="flex items-center md:h-[10vh] justify-between">
+        <div className="md:flex items-center md:h-[10vh] justify-between my-2 text-center">
             <div className=" flex gap-3 justify-center md:justify-start items-center md:items-start ">
                 <a href="https://www.linkedin.com/in/saleh-shokouhi-b7870418b/" target="_blank" className="rounded-full border-2 border-sky-800 text-center px-3 h-10 flex items-center justify-center hover:bg-sky-800 transition-all duration-150" >
                     <span >linkedin</span>
@@ -14,7 +14,7 @@ export default function MainFooter() {
                     <span >stackoverflow</span>
                 </a>
             </div>
-            <div>
+            <div className="mt-2 md:mt-0">
                 <span className="underline underline-offset-8 hover:text-sky-500">sh.saleh.312@gmail.com</span>
             </div>
         </div>
