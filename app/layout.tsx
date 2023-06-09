@@ -1,6 +1,7 @@
 import MainHeader from '@/components/mainHeader'
 import './globals.css'
 import { Inter } from 'next/font/google'
+import MainFooter from '@/components/mainFooter'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -24,6 +25,9 @@ export default function RootLayout({
           <section className='mx-[5%]'>
             {children}
           </section>
+          <section className='mx-[5%]'>
+            <MainFooter />
+          </section >
         </div>
       </body>
     </html>
