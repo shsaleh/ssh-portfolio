@@ -16,10 +16,10 @@ export default function MainHeader() {
                         <Link href="/about">About</Link>
                     </li>
                     <li className="hover:text-sky-800 transition-all ease-out duration-150">
-                        <Link href="/">Skills</Link>
+                        <Link href="/skills">Skills</Link>
                     </li>
                     <li className="hover:text-sky-800 transition-all ease-out duration-150">
-                        <Link href="/">Projects</Link>
+                        <Link href="/projects">Projects</Link>
                     </li>
                     <li className="hover:text-sky-800 transition-all ease-out duration-150">
                         <Link href="/contact">Contact</Link>
