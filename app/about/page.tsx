@@ -11,9 +11,9 @@ export default function about() {
                 <h2 className="md:text-xl text-sky-400">Full Stack Web Developer</h2>
                 <p>I started this career 4 years ago when I faced some difficulties in my previous career as an electrical engineer. I love being an engineer and I have a passion for all engineering majors. However, in my country, being an electrical engineer is very challenging due to a poor workspace culture, an inadequate education system, and low salary. Therefore, I made the decision to switch my career to software engineering. This way, I could learn coding on my own and work with the best colleagues I have ever had.</p>
                 <p>I have worked for several companies and have experience in building various types of web applications. These include online shops, marketplaces, crypto trading platforms, and more.</p>
-                <div className="flex flex-col md:flex-row gap-2 md:mt-10">
+                <div className="flex flex-col md:flex-row gap-3 md:mt-10">
                     <Link href="/Skills"><Btn className="w-[300px]">My Skills</Btn></Link>
-                    <Link href="/projects"><Btn className="w-[300px]">MY Projects</Btn></Link>
+                    <Link href="/projects"><Btn className="w-[300px]">My Projects</Btn></Link>
                     <Link href="/contact"><Btn className="w-[300px]">Contact Me</Btn></Link>
                 </div>
             </section>
