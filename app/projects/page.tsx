@@ -1,7 +1,9 @@
+import ProjectCard from "@/components/projectCard";
+
 export default function ProjectsPage() {
     return (
         <div>
-            under constraction
+            <ProjectCard />
         </div>
     )
 
