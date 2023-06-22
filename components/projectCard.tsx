@@ -16,15 +16,50 @@ export default function ProjectCard() {
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis beatae asperiores, animi eius voluptatem sunt ullam? Vitae vero provident mollitia autem, tempora, alias natus explicabo, soluta veritatis qui deserunt consequuntur.',
             tools: [skills['vue.js'], skills['nuxt.js']],
             number: 2
-        }
+        },
+        {
+            name: 'tsgco.ir',
+            link: 'https://tsgco.ir/',
+            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis beatae asperiores, animi eius voluptatem sunt ullam? Vitae vero provident mollitia autem, tempora, alias natus explicabo, soluta veritatis qui deserunt consequuntur.',
+            tools: [skills['vue.js'], skills['nuxt.js']],
+            number: 2
+        },
+        {
+            name: 'tsgco.ir',
+            link: 'https://tsgco.ir/',
+            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis beatae asperiores, animi eius voluptatem sunt ullam? Vitae vero provident mollitia autem, tempora, alias natus explicabo, soluta veritatis qui deserunt consequuntur.',
+            tools: [skills['vue.js'], skills['nuxt.js']],
+            number: 2
+        },
+        {
+            name: 'tsgco.ir',
+            link: 'https://tsgco.ir/',
+            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis beatae asperiores, animi eius voluptatem sunt ullam? Vitae vero provident mollitia autem, tempora, alias natus explicabo, soluta veritatis qui deserunt consequuntur.',
+            tools: [skills['vue.js'], skills['nuxt.js']],
+            number: 2
+        },
+        {
+            name: 'tsgco.ir',
+            link: 'https://tsgco.ir/',
+            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis beatae asperiores, animi eius voluptatem sunt ullam? Vitae vero provident mollitia autem, tempora, alias natus explicabo, soluta veritatis qui deserunt consequuntur.',
+            tools: [skills['vue.js'], skills['nuxt.js']],
+            number: 2
+        },
+        {
+            name: 'tsgco.ir',
+            link: 'https://tsgco.ir/',
+            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis beatae asperiores, animi eius voluptatem sunt ullam? Vitae vero provident mollitia autem, tempora, alias natus explicabo, soluta veritatis qui deserunt consequuntur.',
+            tools: [skills['vue.js'], skills['nuxt.js']],
+            number: 2
+        },
     ]
 
     return (
-        <div >
+        <div className="h-[80vh] overflow-y-scroll">
             <div className="flex gap-4 flex-wrap justify-center lg:justify-normal">
                 {projects.map(project => {
                     return (
-                        <div key={project.number} className="border border-solid border-sky-500  rounded-2xl max-w-lg">
+                        <div key={project.number} className="border border-solid border-sky-500  rounded-2xl max-w-sm">
                             <div className="p-5">
                                 <h2 className="underline mb-2"><a className="hover:text-sky-500" href={project.link} target="_blank" rel='nofollow'>{project.name}</a></h2>
                                 <p>{project.description}</p>
