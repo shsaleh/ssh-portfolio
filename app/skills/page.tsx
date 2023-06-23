@@ -1,4 +1,4 @@
-import SkillCard, { TskillsCart } from "@/components/skillCard";
+import SkillCard, { TskillsCard } from "@/components/skillCard";
 export enum SKILLS_GROUP {
     LANGUAGES = 'LANGUAGES',
     LIBRARIES = 'LIBRARIES',
@@ -9,7 +9,7 @@ export enum SKILLS_GROUP {
 }
 
 const size = '150px'
-export const skills: { [key: string]: TskillsCart & { number: number, group: SKILLS_GROUP } } = {
+export const skills: { [key: string]: TskillsCard & { number: number, group: SKILLS_GROUP } } = {
     "next.js": {
         "number": 3,
         "image": "/assets/icons/nextjs-icon.png",
