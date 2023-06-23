@@ -57,11 +57,13 @@ export default function ProjectsPage() {
     return (
         <div>
             <div className="h-[80vh] overflow-y-scroll">
-                <div className="flex gap-4 flex-wrap justify-center ">
+                <div className="grid grid-cols-3 gap-4 py-4 ">
                     {
                         projects.map(project => (
-                            <ProjectCard key={project.number + 'projects'} name={project.name} description={project.description}
-                                link={project.link} skills={project.skills} skillsSize="50px" />
+                            <div className="justify-self-start" key={project.number + 'projects'}>
+                                <ProjectCard name={project.name} description={project.description}
+                                    link={project.link} skills={project.skills} skillsSize="30px" />
+                            </div>
                         ))
                     }
                 </div>
