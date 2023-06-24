@@ -80,10 +80,17 @@ export const skills: { [key: string]: TskillsCard & { number: number, group: SKI
         "size": size,
         "group": SKILLS_GROUP.TOOLS
     },
-    "tailwind css": {
+    "tailwind.css": {
         "number": 7,
         "image": "/assets/icons/tailwind-icon.png",
         "name": "tailwind css",
+        "size": size,
+        "group": SKILLS_GROUP.TOOLS
+    },
+    "bootstrap.css": {
+        "number": 7,
+        "image": "/assets/icons/bootstrap-icon.png",
+        "name": "bootstrap css",
         "size": size,
         "group": SKILLS_GROUP.TOOLS
     },
