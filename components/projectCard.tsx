@@ -15,10 +15,10 @@ export type TprojectCard = Tproject & {
 export default function ProjectCard({ name, link, description, skills, skillsSize, skillsType = SKILL_CARD_TYPES.SIMPLE }: TprojectCard) {
 
     return (
-        <div className="border border-solid border-sky-500  rounded-2xl min-w-sm">
-            <div className="p-5">
+        <div className="border border-solid border-sky-500  rounded-2xl min-w-sm overflow-hidden">
+            <div className="p-5 h-44 overflow-auto scrollbar-thin scrollbar-rounded-[20px]">
                 <h2 className="underline mb-2"><a className="hover:text-sky-500" href={link} target="_blank" rel='nofollow'>{name}</a></h2>
-                <p>{description}</p>
+                <p className="whitespace-pre-line">{description}</p>
             </div>
             <div className=" border-t-2 border-solid border-sky-500"></div>
             <div className="flex justify-center gap-2 p-3">{
