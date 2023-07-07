@@ -6,6 +6,7 @@ import TextArea from "./customs/TextArea";
 import Btn from "./customs/btn";
 import Toast, { ToastPropsType } from "./customs/toast";
 import Form from "./customs/form";
+import { checkNumber } from "@/app/utils/formRules";
 
 export function ContactForm() {
     const [submitloading, setSubmitLoading] = useState(false)
@@ -46,7 +47,11 @@ export function ContactForm() {
                 </div>
                 <div className="flex w-full gap-2">
                     <TextField className="w-full" placeholder="subject" name="subject" />
-                    <TextField className="w-full" Required placeholder="Mobile Number" name="mobile" />
+                    <TextField className="w-full" Required rules={
+                        {
+                            number: checkNumber
+                        }
+                    } placeholder="Mobile Number" name="mobile" />
                 </div>
                 <TextArea placeholder="text" rows={5} name="text" />
                 <Btn type="submit" loading={submitloading} className="w-full mt-2">Submit</Btn>
