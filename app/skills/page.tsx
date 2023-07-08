@@ -1,4 +1,5 @@
 import SkillCard, { TskillsCard } from "@/components/skillCard";
+import { Metadata } from "next";
 export enum SKILLS_GROUP {
     LANGUAGES = 'LANGUAGES',
     LIBRARIES = 'LIBRARIES',
@@ -7,7 +8,9 @@ export enum SKILLS_GROUP {
     DATABASES = 'DATABASES',
 
 }
-
+export const metadata: Metadata = {
+    title: "skills",
+  }
 const size = '150px'
 export const skills: { [key: string]: TskillsCard & { number: number, group: SKILLS_GROUP } } = {
     "next.js": {

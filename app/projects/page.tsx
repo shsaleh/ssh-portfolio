@@ -1,7 +1,10 @@
 import ProjectCard, { Tproject } from "@/components/projectCard";
 import { skills } from "@/app/skills/page"
 import SkillCard from "@/components/skillCard"
-
+import { Metadata } from "next";
+export const metadata: Metadata = {
+    title: "projects",
+  }
 export default function ProjectsPage() {
     const projects: Array<Tproject & { number: number }> = [
         {

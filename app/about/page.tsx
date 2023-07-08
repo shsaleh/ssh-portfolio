@@ -2,7 +2,10 @@ import Image from "next/image";
 import profileImage from "@/public/assets/profile.jpg";
 import Link from "next/link";
 import Btn from "@/components/customs/btn";
-
+import { Metadata } from "next";
+export const metadata: Metadata = {
+    title: "about",
+  }
 export default function about() {
     return (
         <div className="md:h-[80vh] flex items-center justify-center flex-col-reverse md:flex-row-reverse space-y-5 md:space-y-0">
