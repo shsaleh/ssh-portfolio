@@ -22,7 +22,7 @@ export function ContactForm() {
         data.forEach((value, key) => object[key] = value);
         axios.post('/api/sendEmail', object).then(res => {
             setToast({
-                message: 'The email has been successfully sent.',
+                message: 'The email has been sent successfully.',
                 show: true,
                 type: 'SUCCESS'
             })
