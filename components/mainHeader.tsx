@@ -13,7 +13,7 @@ export default function MainHeader() {
                         <Link href="/">Home</Link>
                     </li>
                     <li className="hover:text-sky-800 transition-all ease-out duration-150">
-                        <Link href="/about">About</Link>
+                        <Link href="/about" prefetch={false}>About</Link>
                     </li>
                     <li className="hover:text-sky-800 transition-all ease-out duration-150">
                         <Link href="/skills">Skills</Link>

@@ -2,7 +2,7 @@ import MainHeader from '@/components/mainHeader'
 import './globals.css'
 import { Inter } from 'next/font/google'
 import MainFooter from '@/components/mainFooter'
-
+import { AnimationWraper } from '@/components/animationWraper'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -23,7 +23,9 @@ export default function RootLayout({
             <MainHeader />
           </section>
           <section className='mx-[5%] md:h-[80%]'>
-            {children}
+            <AnimationWraper>
+              {children}
+            </AnimationWraper>
           </section>
           <section className='md:h-[9%]  py-5 md:py-0'>
             <MainFooter />
