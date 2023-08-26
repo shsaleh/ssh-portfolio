@@ -16,6 +16,9 @@ export function ContactForm() {
         type: 'SUCCESS'
     })
     const sendEmail = (e: FormEvent<HTMLFormElement>) => {
+        setSubmitLoading(true)
+        console.log(e);
+
         axios.post('/api/sendEmail', e).then(res => {
             setToast({
                 message: 'The email has been sent successfully.',
