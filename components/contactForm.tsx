@@ -16,11 +16,7 @@ export function ContactForm() {
         type: 'SUCCESS'
     })
     const sendEmail = (e: FormEvent<HTMLFormElement>) => {
-        setSubmitLoading(true)
-        let data = new FormData(e.currentTarget);
-        var object: any = {};
-        data.forEach((value, key) => object[key] = value);
-        axios.post('/api/sendEmail', object).then(res => {
+        axios.post('/api/sendEmail', e).then(res => {
             setToast({
                 message: 'The email has been sent successfully.',
                 show: true,
@@ -40,7 +36,7 @@ export function ContactForm() {
     }
     return (
         <div className=" flex flex-col md:justify-center">
-            <Form method="post" handleSubmit={sendEmail} className="flex flex-col gap-2  items-center md:w-1/2 mx-auto mt-10">
+            <Form method="post" handleSubmit={sendEmail}  id="contact-form" className="flex flex-col gap-2  items-center md:w-1/2 mx-auto mt-10">
                 <div className="flex w-full gap-2">
                     <TextField className="w-full" Required placeholder="Name" name="name" />
                     <TextField className="w-full" Required placeholder="email" name="email" />
@@ -53,7 +49,7 @@ export function ContactForm() {
                         }
                     } placeholder="Mobile Number" name="mobile" />
                 </div>
-                <TextArea placeholder="text" rows={5} name="text" />
+                <TextArea  form="contact-form" placeholder="text" rows={5} name="text" />
                 <Btn type="submit" loading={submitloading} className="w-full mt-2">Submit</Btn>
             </Form>
             <Toast message={toast.message} type={toast.type} show={toast.show} onHide={() => {
