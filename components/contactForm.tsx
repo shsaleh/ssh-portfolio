@@ -6,7 +6,7 @@ import TextArea from "./customs/TextArea";
 import Btn from "./customs/btn";
 import Toast, { ToastPropsType } from "./customs/toast";
 import Form from "./customs/form";
-import { checkNumber } from "@/app/utils/formRules";
+import { checkNumber } from "@/libs/utils/formRules";
 
 export function ContactForm() {
     const [submitloading, setSubmitLoading] = useState(false)
