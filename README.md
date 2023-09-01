@@ -1,3 +1,5 @@
+This is a free-to-use personal portfolio website, so feel free to clone it, modify it, or use it as is. I am constantly working on this project to improve it. If you want to contribute, please contact me via email. You can find my email address in my profile.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
