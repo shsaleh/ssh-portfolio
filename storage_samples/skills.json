@@ -1,0 +1,8 @@
+{
+    "next.js": {
+        "image": "/assets/icons/nextjs-icon.png",
+        "name": "next.js",
+        "size": "150px",
+        "number": 3
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "name": "john doe",
+    "email": "johnDoe@abc.com",
+    "title": "web developer",
+    "summery": "",
+    "socials": {
+        "linkedin": "#",
+        "github": "#",
+        "stackoverflow": "#"
+    }
+}
